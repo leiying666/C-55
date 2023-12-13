@@ -1,0 +1,26 @@
+#include <stdio.h>
+int gongyue(int a, int b)
+{
+	int c=1;
+	while (c)
+	{
+		c = a % b;
+		a = b;
+		b = c;
+	}
+	return a;
+}
+int gongbei(int a, int b,int ret1)
+{
+	return a * b / ret1;
+}
+int main()
+{
+	int a, b;
+	scanf("%d%d", &a, &b);
+	int ret1=gongyue(a, b);
+	int ret2 = gongbei(a, b,ret1);
+	printf("%d\n", ret1);
+	printf("%d\n", ret2);
+	return 0;
+}
