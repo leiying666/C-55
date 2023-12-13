@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+	int a, b,ret1,ret2;
+	scanf("%d%d", &a, &b);
+	for (int i = 1; a % i == 0 && b % i == 0; i++)
+	{
+		ret1 = i;
+	}
+	ret2 = a * b / ret1;
+	printf("%d\n", ret1);
+	printf("%d\n", ret2);
+	return 0;
+}
